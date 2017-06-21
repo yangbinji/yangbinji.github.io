@@ -1,284 +1,85 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎！</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/page.min.css">
+    <link rel="stylesheet" href="assets/css/effect.min.css">
+    <style>
+        #myMenu { margin: 0; padding: 0; position: fixed; left: 10px; top: 10px; list-style-type: none; z-index: 70;}
+        #myMenu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
+        #myMenu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
+        #myMenu .active a { color: #fff; background-color: #333;}
+        .section { text-align: center; font: 30px "Microsoft Yahei"; color: #fff;}
+        a,a:focus,a:hover {
+            text-decoration: none
+        }
+        .btn {
+            /*font-size: .8rem;*/
+            /*padding: .85rem 2.13rem;*/
+            border-radius: 2px;
+            border: 0;
+            color: #fff!important;
+            margin: 6px;
+            white-space: normal!important;
+            transition: .2s ease-out;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)
+        }
+        .btn.btn-lg {
+            font-size: .9rem;
+            padding: .5rem 3rem
+        }
+        .btn-info {
+            background: #33b5e5
+        }
+        /*.btn-info:focus,.btn-info:hover {*/
+            /*background-color: #4abde8!important*/
+        /*}*/
+        .btn:hover{
+            box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15)
+        }
+        .btn.active,.btn:active,.btn:focus {
+            outline: 0;
+            color: #fff
+        }
+    </style>
 
-	<head>
-		<meta charset="utf-8" />
-		<meta name="description" content="机电|老杨-个人博客" />
-		<meta name="keywords" content="机电|老杨-个人博客" />
-		<title>机电|老杨-个人博客</title>
-		<link rel="shortcut icon" href="favicon.ico" />
-		<link rel="stylesheet" type="text/css" href="css/style.min.css">
-	</head>
 
-	<body onkeydown="test8();">
-		<div id="headerColor"></div>
-		<div id="header">
-			<div id="logo"><img src="images/logo.png" title="基哥!!!!" /></div>
-			<div class="headerWord">
-				<p><strong>--看山是山,看水是水--<br/>--看山不是山,看水不是水--<br/>--看山仍然是山,看水依然是水--</strong></p>
-			</div>
-			<input type="submit" value="搜索" id="but" />
 
-			<form id="search">
-				<input type="text" placeholder="请输入关键字进行搜索" id="test" />
-			</form>
-		</div>
+</head>
+<body class="fp-responsive">
+<ul id="myMenu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+    <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+</ul>
+<div id="angular">
+    <div class="section" data-percentage="50" data-centered="true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi consectetur debitis deserunt earum esse exercitationem illo laboriosam libero, molestias natus necessitatibus neque nihil, nisi numquam perferendis repudiandae sed sint?</div>
+    <div class="section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae cumque debitis doloremque ea est explicabo illum impedit iste nemo odio, porro quaerat quam quasi recusandae temporibus tenetur veritatis voluptate.</div>
+    <div class="section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cumque dolorum ducimus ea et exercitationem in, inventore itaque, laborum nemo nesciunt nihil nostrum nulla perspiciatis quam quod recusandae sapiente?
+        <br>
+        <a href="pages/zh/home/index.html" class="btn btn-lg mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--light-blue mdl-button--colored">中文</a>
+        <a href="#!" class="btn btn-lg mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--deep-orange mdl-button--colored">English</a></div>
 
-		<div id="nav">
-			<ul>
-				<li>
-					<a href="#" id="index" onclick="return false;">首页</a>
-				</li>
-				<li>
-					<a href="#">渗透测试</a>
-					<ul class="menu">
-						<li>
-							<a href="#">SQL注入</a>
-						</li>
-						<li>
-							<a href="#">跨站攻击</a>
-						</li>
-						<li>
-							<a href="#">代码审计</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#" onclick="demo()">资源分享</a>
-					<ul class="menu">
-						<li>
-							<a href="javascript:history.back()">安全工具</a>
-						</li>
-						<li>
-							<a href="#">安全文档</a>
-						</li>
-						<li>
-							<a href="#">实用工具</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">视频教程</a>
-					<ul class="menu">
-						<li>
-							<a href="#">攻防视频</a>
-						</li>
-						<li>
-							<a href="#">其它视频</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">安全运维</a>
-					<ul class="menu">
-						<li>
-							<a href="#">Linux安全</a>
-						</li>
-						<li>
-							<a href="#">Windows安全</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">实用技巧</a>
-				</li>
-				<li>
-					<a href="#">个人语录</a>
-				</li>
-				<li>
-					<a href="#">旧博客</a>
-				</li>
-				<li>
-					<a href="http://free.3v.do/gbook/post.asp">留言板</a>
-				</li>
-				<li>
-					<a href="#" title="广西机电职业技术学院">更多</a>
-					<ul id="menu2" class="menu">
-						<li>
-							<a href="#">在线电台</a>
-						</li>
-						<li>
-							<a href="#">网络电视</a>
-						</li>
-						<li>
-							<a href="#">标签云集</a>
-						</li>
-						<li>
-							<a href="#">文章归档</a>
-						</li>
-						<li>
-							<a href="#">友情链接</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-		
-		<div id="tit">
- -			<h1>警句云集</h1></div>
-		
-		<div id="main">
-			<div id="container">
-				<div id="pic1" class="pic">
-					<a href="#"><img src="images/pic1.jpg" alt="图片显示错误!" onmouseover="this.src='images/pic2.jpg'" onmouseout="src='images/pic1.jpg'"/></a>
+</div>
+<script src="assets/js/effect.min.js"></script>
+<script src="assets/js/jquery-2.2.3.min.js"></script>
+<script src="assets/js/page.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#angular').angular({
+            anchors:['firstPage', 'secondPage', 'thirdPage','fourthPage'],
+            sectionsColor: ['#4CAF50', '#4CAF50', '#4CAF50'],
+            menu: '#myMenu',
+            navigationPosition: 'right',
+            showActiveTooltip: !1,
+            navigation: !0,
+            lazyLoading: !0,
+            recordHistory: !1
 
-					<h2 class="p1">————猜不透的机电</h2>
-				</div>
-				<div id="pic2" class="pic">
-					<a href="#"><img src="images/pic2.jpg" alt="" /></a>
-
-					<h2 class="p1">不自重者取辱，不自畏者招祸</h2>
-				</div>
-				<div id="pic3" class="pic">
-					<a href="#"><img src="images/pic3.jpg" alt="" /></a>
-
-					<h3 class="p1">无事时，戒一偷字。有事时，戒一乱字</h3>
-				</div>
-				<div id="pic4" class="pic">
-					<a href="#"><img src="images/pic4.jpg" alt="" /></a>
-
-					<h3 class="p1">何以息谤？曰：无辩。
-                何以止怨？曰：不争</h3>
-				</div>
-				<div id="pic5" class="pic">
-					<a href="#"><img src="images/pic5.jpg" alt="" /></a>
-					<h4 class="p1">强不知以为知，此乃大愚。本无事而生事，是谓薄福。</h4>
-				</div>
-				<div id="pic6" class="pic">
-					<a href="#"><img src="images/pic6.jpg" alt="" /></a>
-
-					<h2 class="p1">静坐，常思已过。闲谈，莫论人非。</h2>
-				</div>
-				<div id="backTop">
-					<a href="javascript:scroll(0,0)">↑</a>
-				</div>
-				<div class="news">
-					<h2><a href="http://www.webhek.com/misc/3d-album" class="active" onclick="return false;">程序员给女朋友用HTML5制作的3D相册</a>
-            </h2>
-					<a href="http://www.webhek.com/misc/3d-album"><img src="images/coderGirlfriend.jpg" alt="" /></a>
-					程序员给女朋友用HTML5制作的3D相册，使用鼠标拖拽，能看到3D旋转效果，点击相片，相片能放大，移近。程序员发挥自己的专长，这是那些不懂编程的人望尘莫及的。本相册使用了HTML5的画布技术，需要谷歌浏览器或火狐浏览器等现代浏览器才能正常观看。
-				</div>
-				<div class="news1">
-					<h2><a href="http://demo.ledkongzhiqi.com/php/114.html" class="active"> 7.0.2正式版发布：WordPress速度提升3倍！</a></h2>
-					<a href="http://demo.ledkongzhiqi.com/php/114.html"> <img src="images/timthumb.php.png" alt="" /></a>
-					提到PHP，肯定会有人说这是世界上最好的编程语言。单说流行程度，目前全球超过81.7%的服务器后端都采用了PHP语言，它驱动着全球超过2亿多个网站。上月初PHP7正式版发布，迎来自2004年以来最大的版本更新。现在，PHP 7.0.2又正式...
-				</div>
-				<div class="news2">
-					<h2><a href="http://demo.ledkongzhiqi.com/jquery/111.html" class="active">
-                最受欢迎JavaScript库：jQuery已经10岁啦！ </a></h2>
-					<a href="http://demo.ledkongzhiqi.com/jquery/111.html"> <img src="images/timthumb.php.jpg" alt="" /></a>
-					让无数人爱恨交加的JavaScript库——jQuery——已经迎来了它的十周岁生日。2006年，还在大学工作的John Resig，于纽约BarCamp上首次介绍了它。自那时起，它就一直在爆发，目前更是成功地被77.8%的Web所采用。因为可以更容易的执行常见任务，jQuery成为了编写JavaScript的...
-				</div>
-				<div class="news3">
-					<h2><a href="http://demo.ledkongzhiqi.com/javascript/108.html" class="active">四款工具顺利实现Python与JavaScript间的代码转换 </a>
-            </h2>
-					<a href="http://demo.ledkongzhiqi.com/javascript/108.html"> <img src="images/timthumb.php2.jpg" alt="" /></a>
-					选Python还是JavaScript？虽然不少朋友还在争论二者目前谁更强势、谁又拥有着更为光明的发展前景，但毫无疑问，二者的竞争在Web前端领域已经拥有明确的答案。立足于浏览器平台，如果放弃JavaScript，我们也就没什么可选择的项目...
-				</div>
-				<div class="news4">
-					<h2><a href="http://demo.ledkongzhiqi.com/zhuti/91.html" class="active">CSS代码重构与优化之路 </a></h2>
-					<a href="http://demo.ledkongzhiqi.com/zhuti/91.html"> <img src="images/timthumb.php3.png" alt="" /></a>
-					写CSS的同学们往往会体会到，随着项目规模的增加，项目中的CSS代码也会越来越多，如果没有及时对CSS代码进行维护，CSS代码不断会越来越多。CSS代码交错复杂，像一张庞大的蜘蛛网分布在网站的各个位置，你不知道修改这行代码会有什么影响，所以...
-				</div>
-				<div class="rightContents">
-					<div class="rightTitle">
-						<h2>热门推荐</h2>
-					</div>
-					<div class="rightList">
-						<a href="http://demo.ledkongzhiqi.com/html/8.html"><img src="images/timthumb.php4.jpg" alt="" />
-						</a>
-						<a href="http://demo.ledkongzhiqi.com/html/8.html">响应式布局这件小事 设计师如何实现响应布局
-						</a> 2016-05-31
-					</div>
-					<div class="rightList">
-						<a href="http://demo.ledkongzhiqi.com/zhuti/77.html"><img src="images/timthumb.php5.jpg" alt="" />
-						</a>
-						<a href="http://demo.ledkongzhiqi.com/zhuti/77.html">HTML5响应式网站给我们的生活带来哪些改变
-						</a> 2016-05-31
-					</div>
-					<div class="rightList">
-						<a href="http://demo.ledkongzhiqi.com/jquery/43.html"><img src="images/timthumb.php6.jpg" alt="" />
-						</a>
-						<a href="http://demo.ledkongzhiqi.com/jquery/43.html">HTML5营销虽火爆　但还需避开误区
-						</a>
-						<br/>2016-05-31
-					</div>
-					<div class="rightList">
-						<a href="http://demo.ledkongzhiqi.com/html/50.html"><img src="images/timthumb.php7.jpg" alt="" />
-						</a>
-						<a href="http://demo.ledkongzhiqi.com/html/50.html">分享5个主流的HTML5开发工具
-						</a>
-						<br/> 2016-05-31
-					</div>
-					<div class="rightList">
-						<a href="http://demo.ledkongzhiqi.com/zhuti/1.html"><img src="images/timthumb.php8.jpg" alt="" />
-						</a>
-						<a href="http://demo.ledkongzhiqi.com/zhuti/1.html">世界，你好！
-						</a>
-						<br/><br/> 2016-05-31
-					</div>
-				</div>
-				<div class="rightContents2">
-					<div class="rightTitle">
-						<h2>标签云集</h2>
-					</div>
-					<div class="rightList2">
-						<a href="javascript: void(0)">html</a>
-					</div>
-					<div class="rightList2">
-						<a href="javascript: void(0)">css</a>
-					</div>
-					<div class="rightList2">
-						<a href="javascript: void(0)">PHP</a>
-					</div>
-					<div class="rightList2">
-						<a href="javascript: void(0)">JavaScript</a>
-					</div>
-					<div class="rightList2">
-						<a href="javascript: void(0)">jquery</a>
-					</div>
-					<div class="rightList2">
-						<a href="javascript: void(0)">MySQL</a>
-					</div>
-					<div class="rightList2">
-						<a href="javascript: void(0)">互联网</a>
-					</div>
-					<div class="rightList2">
-						<a href="javascript: void(0)">前端开发</a>
-					</div>
-					<div class="rightList2">
-						<a href="javascript: void(0)">移动开发</a>
-					</div>
-					<div class="rightList2">
-						<a href="javascript: void(0)">HTML5</a>
-					</div>
-					<div class="rightList2">
-						<a href="javascript: void(0)">样式</a>
-					</div>
-					<div class="rightList2">
-						<a href="javascript: void(0)">渗透测试</a>
-					</div>
-					<div class="rightList2">
-						<a href="javascript: void(0)">wordpress</a>
-					</div>
-					<div class="rightList2">
-						<a href="javascript: void(0)">跨站脚本攻击</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="power">
-			<a href="http://www.google.com"><img src="images/power up2.jpg" alt="" width="960px" />
-			</a>
-		</div>
-		<div id="scr">访客量：
-			<script language="JavaScript" src="http://free.3v.do/count.asp?id=yangbinji"></script>
-		</div>
-		<div id="footer">
-			版权所有@<br/>机电老杨-技术—成就梦想！
-		</div>
-		<script type="text/javascript" src="js/example.js">
-		</script>
-	</body>
-
+        });
+    });
+</script>
+</body>
 </html>

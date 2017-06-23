@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="../../../assets/css/single.min.css">
 </head>
 <body>
-<div id="nav">
-    <y-nav></y-nav>
-</div>
+<header v-once>
+    <y-header></y-header>
+</header>
 <div id="carousel-example-3" class="carousel slide carousel-fade white-text" data-ride="carousel" data-interval="false">
     <ol class="carousel-indicators">
         <li data-target="#carousel-example-3" data-slide-to="0" class="active"></li>
@@ -96,23 +96,15 @@
         </div>
     </div>
 </div>
-<footer class="page-footer center-on-small-only">
-    <div class="call-to-action"><h4></h4>
-        <ul>
-            <li><a href="#!" class="btn btn-info" rel="nofollow">关于我们</a></li>
-            <li><a href="#!" class="btn btn-default" rel="nofollow">联系我们</a></li>
-        </ul>
-    </div>
-    <div class="footer-copyright">
-        <div class="container-fluid"> © 2017 Copyright: <a href="#!"> 广西机电 </a></div>
-    </div>
-    <terms-of-service></terms-of-service>
+<footer :class="classObject" v-once>
+    <y-footer></y-footer>
 </footer>
 <script src="../../../assets/js/react.min.js"></script>
 <script type="text/javascript" src="../../../assets/js/jquery-2.2.3.min.js"></script>
 <script type="text/javascript" src="../../../assets/js/tether.min.js"></script>
 <script type="text/javascript" src="../../../assets/js/foundation.min.js"></script>
 <script type="text/javascript" src="../../../assets/js/components.min.js"></script>
-<script> new WOW().init(); </script>
+<script> new WOW().init();$("header li:eq(0)").addClass("active")
+</script>
 </body>
 </html>

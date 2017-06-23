@@ -12,29 +12,9 @@
     <link rel="stylesheet" href="../../../assets/css/single.min.css">
 </head>
 <body>
-<nav class="navbar navbar-toggleable-md navbar-dark fixed-top scrolling-navbar">
-    <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <a class="navbar-brand" href="../home/index.html">
-            <img src="../../../assets/img/svg/camel-48445.svg" height="30" alt=""> </a>
-        <div class="collapse navbar-collapse" id="navbarNav1">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="../home/index.html"><i class="fa fa-home"
-                                                                                      aria-hidden="true"></i> 首页 <span
-                        class="sr-only">(current)</span></a></li>
-                <li class="nav-item active"><a href="index.html" class="nav-link">新闻资讯</a></li>
-                <li class="nav-item"><a href="../photo/index.html" class="nav-link">美图欣赏</a></li>
-                <li class="nav-item"><a href="../video/index.html" class="nav-link">视频展示</a></li>
-                <li class="nav-item"><a href="../xjps/index.html" class="nav-link">习近平说</a></li>
-                <li class="nav-item"><a class="nav-link">English</a></li>
-            </ul>
-            <form class="form-inline waves-effect waves-light"><input class="form-control" type="text"
-                                                                      placeholder="站内搜索"></form>
-        </div>
-    </div>
-</nav>
+<header v-once>
+    <y-header></y-header>
+</header>
 <div id="carousel-example-3" class="carousel slide carousel-fade white-text" data-ride="carousel" data-interval="false">
     <ol class="carousel-indicators">
         <li data-target="#carousel-example-3" data-slide-to="0" class="active"></li>
@@ -146,21 +126,14 @@
         </div>
     </div>
 </div>
-<footer class="page-footer center-on-small-only">
-    <div class="call-to-action"><h4></h4>
-        <ul>
-            <li><a href="#!" class="btn btn-info" rel="nofollow">关于我们</a></li>
-            <li><a href="#!" class="btn btn-default" rel="nofollow">联系我们</a></li>
-        </ul>
-    </div>
-    <div class="footer-copyright">
-        <div class="container-fluid"> © 2017 Copyright: <a href="#!"> 广西机电 </a></div>
-    </div>
+<footer :class="classObject" v-once>
+    <y-footer></y-footer>
 </footer>
+<script src="../../../assets/js/react.min.js"></script>
 <script type="text/javascript" src="../../../assets/js/jquery-2.2.3.min.js"></script>
 <script type="text/javascript" src="../../../assets/js/tether.min.js"></script>
 <script type="text/javascript" src="../../../assets/js/foundation.min.js"></script>
 <script type="text/javascript" src="../../../assets/js/components.min.js"></script>
-<script> new WOW().init(); </script>
+<script> new WOW().init();$("header li:eq(1)").addClass("active") </script>
 </body>
 </html>

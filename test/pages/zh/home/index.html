@@ -11,12 +11,13 @@
     <link href="../../../assets/css/components.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../../assets/css/effect.min.css">
     <link rel="stylesheet" href="../../../assets/css/single.min.css">
+    <link rel="stylesheet" href="../../../assets/css/slider.min.css">
 </head>
 <body>
-<header v-once>
+<header>
     <y-header></y-header>
 </header>
-<div id="carousel-example-3" class="carousel slide carousel-fade white-text" data-ride="carousel" data-interval="false">
+<!--<div id="carousel-example-3" class="carousel slide carousel-fade white-text" data-ride="carousel" data-interval="false">
     <ol class="carousel-indicators">
         <li data-target="#carousel-example-3" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-3" data-slide-to="1"></li>
@@ -54,7 +55,33 @@
     <a class="carousel-control-prev" href="#carousel-example-3" role="button" data-slide="prev"> <span
             class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a
         class="carousel-control-next" href="#carousel-example-3" role="button" data-slide="next"> <span
-        class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a></div>
+        class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a></div>-->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(../../../assets/img/slider1.jpg)">
+            <div class="flex-center white-text">
+                <a href="#!">中国将构建生态环保合作平台 推动绿色“一带一路”建设</a>
+            </div>
+        </div>
+        <div class="swiper-slide" style="background-image:url(../../../assets/img/slider2.jpg)">
+            <div class="full-bg-img flex-center white-text">
+                <ul class="animated fadeIn col-md-12">
+                    <li><h3 class="h3-responsive">践行绿色发展理念 桂林山水变“金山银山”</h3></li>
+                    <li><a href="#!" class="btn btn-info btn-lg" rel="nofollow">查看详情</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="swiper-slide" style="background-image:url(../../../assets/img/slider3.jpg)">
+            <div class="full-bg-img flex-center white-text">
+                <ul class="animated fadeIn col-md-12">
+                    <li><h3 class="h3-responsive">第四届丝绸之路国际生态产业博览会暨绿色有机产品（张掖）交易会将于9月举办</h3></li>
+                    <li><a href="#!" class="btn btn-info btn-lg" rel="nofollow">查看详情</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
 <br>
 <div class="container">
     <div class="row">
@@ -97,10 +124,10 @@
         </div>
     </div>
 </div>
-<div id="back-to-top-container" v-once>
+<div id="back-to-top-container">
 <y-back-to-top></y-back-to-top>
 </div>
-<footer :class="classObject" v-once>
+<footer :class="classObject">
     <y-footer></y-footer>
 </footer>
 <script src="../../../assets/js/react.min.js"></script>
@@ -109,6 +136,7 @@
 <script type="text/javascript" src="../../../assets/js/foundation.min.js"></script>
 <script src="../../../assets/js/effect.min.js"></script>
 <script type="text/javascript" src="../../../assets/js/components.min.js"></script>
+<script src="../../../assets/js/slider.jquery.min.js"></script>
 <script type="text/javascript" src="../../../assets/js/single.min.js"></script>
 <script>$("header li:eq(0)").addClass("active");
 </script>

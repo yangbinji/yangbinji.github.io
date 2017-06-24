@@ -1,6 +1,6 @@
 html, body {height: 100%; font-family:"微软雅黑"; } .navbar {background-color: transparent; } .top-nav-collapse {background-color: #4CAF50; } footer.page-footer {background-color: #4CAF50; } @media only screen and (max-width: 768px) {.navbar {background-color: #4CAF50; } } .scrolling-navbar {-webkit-transition: background .5s ease-in-out, padding .5s ease-in-out; -moz-transition: background .5s ease-in-out, padding .5s ease-in-out; transition: background .5s ease-in-out, padding .5s ease-in-out; } .carousel {height: 50%; } @media (max-width: 776px) {.carousel {height: 100%; } } .carousel-item, .active {height: 100%; } .carousel-inner {height: 100%; } .flex-center {color: #fff; }
 .back-to-top{
-    position: fixed;
-    right: 1em;
-    bottom: 3em;
+    position: fixed !important;
+    right: 1em !important;
+    bottom: 3em !important;
 }

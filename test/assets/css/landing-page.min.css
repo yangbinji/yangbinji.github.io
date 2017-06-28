@@ -76,5 +76,7 @@ a, a:focus, a:hover {
     .btn.btn-lg {
         display: block;
         width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 }

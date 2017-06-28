@@ -39,9 +39,17 @@
     }
 
     .section {
-        text-align: center;
-        font: 30px "Microsoft Yahei";
+        font: 1.5rem "Microsoft Yahei";
         color: #fff;
+        padding: 0 5rem;
+    }
+    ul, li {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style-type: none;
     }
 
     a, a:focus, a:hover {
@@ -74,23 +82,29 @@
 </head>
 <body class="fp-responsive">
 <ul id="myMenu">
-    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-    <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">构思提出</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">涵盖范围</a></li>
+    <li data-menuanchor="thirdPage"><a href="#thirdPage">广西定位</a></li>
 </ul>
 <div id="angular">
-    <div class="section" data-percentage="50" data-centered="true">Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit. Atque commodi consectetur debitis deserunt earum esse exercitationem illo laboriosam libero, molestias
-        natus necessitatibus neque nihil, nisi numquam perferendis repudiandae sed sint?
+    <div class="section" data-percentage="50" data-centered="true"><h4>
+        2013年9月和10月，中国国家主席习近平在出访中亚和东南亚国家期间，先后提出共建“丝绸之路经济带”和“21世纪海上丝绸之路”的重大倡议，得到国际社会高度关注。</h4>
+        <ul>
+            <li><h6> 中国提出两个符合欧亚大陆经济整合的大战略：</h6></li>
+            <li> 1、丝绸之路经济带战略；</li>
+            <li> 2、21世纪海上丝绸之路经济带战略。</li>
+            <li><h6> 两者合称——“一带一路”战略。</h6></li>
+        </ul>
     </div>
-    <div class="section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae cumque debitis
-        doloremque ea est explicabo illum impedit iste nemo odio, porro quaerat quam quasi recusandae temporibus tenetur
-        veritatis voluptate.
+    <div class="section"><h6>丝绸之路经济带圈定：新疆、重庆、陕西、甘肃、宁夏、青海、内蒙古、黑龙江、吉林、辽宁、广西、云南、西藏13省（直辖市）。</h6>
+       <h6> 21世纪海上丝绸之路圈定：上海、福建、广东、浙江、海南5省（直辖市）。</h6>
+       <h6> 共计18个省、自治区、直辖市。</h6>
     </div>
-    <div class="section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cumque dolorum ducimus ea
-        et exercitationem in, inventore itaque, laborum nemo nesciunt nihil nostrum nulla perspiciatis quam quod
-        recusandae sapiente? <br> <a href="pages/zh/home/index.html"
-                                     class="btn btn-lg mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--light-blue mdl-button--colored">中文</a>
+    <div class="section"><h6>——广西的定位是：21世纪海上丝绸之路与丝绸之路经济带有机衔接的重要门户。</h6>
+        <br>
+        <p>在这个继往开来的历史时期，让我们一起来奏响“一带一路”的时代和声！</p>
+        <a href="pages/zh/home/index.html"
+                                                                       class="btn btn-lg mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--light-blue mdl-button--colored">中文</a>
         <a href="#!"
            class="btn btn-lg mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--deep-orange mdl-button--colored">English</a>
     </div>
@@ -100,7 +114,7 @@
 <script src="assets/js/angular.min.js"></script>
 <script type="text/javascript"> $(document).ready(function () {
     $('#angular').angular({
-        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+        anchors: ['firstPage', 'secondPage', 'thirdPage'],
         sectionsColor: ['#4CAF50', '#4CAF50', '#4CAF50'],
         menu: '#myMenu',
         navigationPosition: 'right',

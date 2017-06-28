@@ -73,6 +73,9 @@ a, a:focus, a:hover {
     .section {
         padding: 0 1rem;
     }
+    .btn {
+        margin: 6px 0;
+    }
     .btn.btn-lg {
         display: block;
         width: 100%;

@@ -9,128 +9,16 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon/favicon.ico">
     <link rel="stylesheet" href="assets/css/angular.css">
     <link rel="stylesheet" href="assets/css/effect.min.css">
-    <style> #myMenu {
-        margin: 0;
-        padding: 0;
-        position: fixed;
-        left: 10px;
-        top: 10px;
-        list-style-type: none;
-        z-index: 70;
-    }
-
-    #myMenu li {
-        float: left;
-        margin: 0 10px 0 0;
-        font-size: 14px;
-    }
-
-    #myMenu a {
-        float: left;
-        padding: 10px 20px;
-        background-color: #fff;
-        color: #333;
-        text-decoration: none;
-    }
-
-    #myMenu .active a {
-        color: #fff;
-        background-color: #333;
-    }
-
-    .section {
-        font: 1.5rem "Microsoft Yahei";
-        color: #fff;
-        padding: 0 15rem;
-    }
-    ul, li {
-        margin: 0;
-        padding: 0;
-    }
-
-    li {
-        list-style-type: none;
-    }
-
-    a, a:focus, a:hover {
-        text-decoration: none
-    }
-
-    .btn {
-        border-radius: 2px;
-        border: 0;
-        color: #fff !important;
-        margin: 6px;
-        white-space: normal !important;
-        transition: .2s ease-out;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
-    }
-
-    .btn.btn-lg {
-        font-size: 1.2rem;
-        padding: .3rem 8.4rem
-    }
-
-    .btn:hover {
-        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15)
-    }
-
-    .btn.active, .btn:active, .btn:focus {
-        outline: 0;
-        color: #fff
-    }
-    @media screen and (max-width: 768px){
-        .section {
-            padding: 0 1rem;
-        }
-        .btn.btn-lg {
-            display: block;
-            width: 100%;
-        }
-    }
-    </style>
+    <link rel="stylesheet" href="assets/css/landing-page.min.css">
 </head>
 <body class="fp-responsive">
-<ul id="myMenu">
-    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">构思提出</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage">涵盖范围</a></li>
-    <li data-menuanchor="thirdPage"><a href="#thirdPage">广西定位</a></li>
-</ul>
-<div id="angular">
-    <div class="section" data-percentage="50" data-centered="true"><h4>
-        2013年9月和10月，中国国家主席习近平在出访中亚和东南亚国家期间，先后提出共建“丝绸之路经济带”和“21世纪海上丝绸之路”的重大倡议，得到国际社会高度关注。</h4>
-        <ul>
-            <li><h6> 中国提出两个符合欧亚大陆经济整合的大战略：</h6></li>
-            <li>1、丝绸之路经济带战略；</li>
-            <li>2、21世纪海上丝绸之路经济带战略。</li>
-            <li><h6> 两者合称——“一带一路”战略。</h6></li>
-        </ul>
-    </div>
-    <div class="section"><h6>丝绸之路经济带圈定：新疆、重庆、陕西、甘肃、宁夏、青海、内蒙古、黑龙江、吉林、辽宁、广西、云南、西藏13省（直辖市）。</h6>
-       <h6> 21世纪海上丝绸之路圈定：上海、福建、广东、浙江、海南5省（直辖市）。</h6>
-       <h6> 共计18个省、自治区、直辖市。</h6>
-    </div>
-    <div class="section"><h6>——广西的定位是：21世纪海上丝绸之路与丝绸之路经济带有机衔接的重要门户。</h6>
-        <br>
-        <p>在这个重要的历史时期，让我们一起来奏响“一带一路”的时代和声！</p>
-        <a href="pages/zh/home/index.html" class="btn btn-lg mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--red mdl-button--colored">中文</a>
-        <a href="pages/en/" class="btn btn-lg mdl-button mdl-js-buttonk mdl-button--raised mdl-js-ripple-effect mdl-color--light-blue mdl-button--colored">English</a>
-    </div>
-</div>
+<article>
+    <y-landing></y-landing>
+</article>
+<script src="assets/js/react.min.js"></script>
 <script src="assets/js/effect.min.js"></script>
 <script src="assets/js/jquery-2.2.3.min.js"></script>
 <script src="assets/js/angular.min.js"></script>
-<script type="text/javascript"> $(document).ready(function () {
-    $('#angular').angular({
-        anchors: ['firstPage', 'secondPage', 'thirdPage'],
-        sectionsColor: ['#4CAF50', '#4CAF50', '#4CAF50'],
-        menu: '#myMenu',
-        navigationPosition: 'right',
-        showActiveTooltip: !1,
-        navigation: !0,
-        lazyLoading: !0,
-        recordHistory: !1
-    });
-}); </script>
+<script src="assets/js/landing-page.min.js"></script>
 </body>
 </html>

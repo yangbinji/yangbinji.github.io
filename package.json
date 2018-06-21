@@ -1,0 +1,23 @@
+{
+  "name": "my-website",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangbinji/yangbinji.github.io.git"
+  },
+  "keywords": [],
+  "author": "Yang Binji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yangbinji/yangbinji.github.io/issues"
+  },
+  "homepage": "https://github.com/yangbinji/yangbinji.github.io#readme"
+}
